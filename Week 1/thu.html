@@ -6,43 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>btvn4</title>
     <style>
-        img {
-            position: absolute;
-            left: 10%;
-            width: 120px;
-            height: 120px;
-        }
-
-        #a {
-            position: absolute;
-            right: 35%;
-        }
-
-        .b {
-            position: relative;
-            top: 250px;
+      body{
+          margin: 0;
+          padding: 0;
+      }
+      header{
+          background-color: rgba(40, 40, 54, 0.938);
+          color: rgb(240, 245, 245);
+          height: 5vh;
+      }
+      footer{
+        background-color: rgba(40, 40, 54, 0.938);
+        height: 10vh;
+      }
+      .main{
+          height: 85vh;
+         display: flex;
+      }
+      .left{
+          width: 20%;
+          height: 100%;
+      }
+      .right{
+          height: 100%;
+          width: 80%;
+      }
+    .bia{
+        height: 30%;
+        width: 100%;
+    }
+    .span1{
+     float: left;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 5px 5px;
+     text-decoration: none;
+    }
+    .span2{
+     float: right;
+     text-align: center;
+     padding: 5px 5px;
+     text-decoration: none;
+    }
+    td, tr, table{
+            border-collapse: collapse;
+            border: 1px solid rgb(145, 159, 161);
+            
         }
     </style>
 </head>
 
 <body>
-    <img src="https://websites.sportstg.com/pics/00/01/21/77/1217770_1_O.jpg" alt="">
-    <div id="a">
+    <header>
+       <span class="span1">Nền tảng</span>
+       <span class="span2">
+           <a style="text-decoration: none; color:#f2f2f2;" href="">Trang chủ</a>
+           &nbsp;
+           <a style="text-decoration: none; color:#f2f2f2;" href="">Giới thiệu</a>
+           &nbsp;
+           <a style="text-decoration: none; color: #f2f2f2;" href="">Dịch vụ</a>
+           &nbsp;
+           <a style="text-decoration: none; color: #f2f2f2;" href="">Liên hệ</a>
+    </span>
+    </header>
+    <div class="main">
+        <div class="left">
+            <h3>NeTa Shop</h3>
+            <table cellpadding="7">
+                <tr>
+                    <td style="width:40vh;"><a style="text-decoration: none;" href="">Category1</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 40vh"><a style="text-decoration: none;" href="">Category2</a></td>
+                </tr>
+                <tr>
+                    <td style="width: 40vh"><a style="text-decoration: none;" href="">Category3</a></td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="right">
+             <div class="bia">
+                 <img style="width: 100%; height: 100%;" src="Cover_Chan_Rau_Zalo.jpg" alt="">
+             </div>
         
-        <h1 style="color: rgb(63, 157, 201);;">Vincent State School</h1>
-        <h4 style="color: slategrey;">280 Palmerston Street, Townsville, 4814</h4>
     </div>
-    <div class="b">
-        <span>saddddsssssssss</span>
-        <p>sadddddđ</p>
-        <p>sdaaaaaaaaaaaaa</p>
-        <p>sdaaaaaaaaaaaaa</p>
-        <p>sdaaaaaaaaaaaaa</p>
-        <p>sdaaaaaaaaaaaaa</p>
-        <p>sdaaaaaaaaaaaaa</p>
     </div>
+    <footer>
+          <span style="color: #f2f2f2; float: left; top: ; left: 40%;" class="pfooter">Bản quyền bởi &copy; <a style="text-decoration: none; color: rgb(42, 70, 199);" href="">NenTang.vn</a> &copy; 2019</span>
+    </footer>
+   
 </body>
 
 </html>
