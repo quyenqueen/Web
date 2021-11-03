@@ -6,168 +6,326 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>btvn4</title>
+    <title>NeTa Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="slide.css">
     <style>
       body{
           margin: 0;
           padding: 0;
+          font-family: sans-serif;
       }
       header{
           background-color: rgba(40, 40, 54, 0.938);
           color: rgb(240, 245, 245);
-          height: 5vh;
-          width: 100%;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+      header h3{
+          color: white;
+          margin-left: 10px;
+      }
+      header a{
+          color: gray;
+          margin-right: 10px;
+          text-decoration: none;
+      }
+      header a:first-child{
+          color: white;
       }
       .main{
-          height: 85vh;
-          width: 100%;
           display: flex;
+          padding-left: 20px;
+          margin-bottom: 30px;
+      }
+      .left{
+          width: 25%;
+      }
+      table{
+          width: 100%;
+          border-collapse: collapse;
+      }
+      td{
+          border: 1px solid rgb(99, 127, 131);
+          padding: 10px;
+          color: rgb(79, 79, 230);
+
+      }
+      .right{
+          width: 75%;
+          padding-left: 20px;
+      }
+      .dssp{
+          display: flex;
+      }
+      .sp{
+          width: 285px;
+          height: 400px;
+          border: 1px solid gray;
+          margin-left: 15px;
+          border-radius: 5px;
+          margin-top: 10px;
+      }
+      .image{
+          height: 30%;
+          background-color: rgb(241, 157, 230);
+      }
+      .content{
+          height: 60%;
+          padding: 10px;
+          box-sizing: border-box;
+      }
+      .content h3:first-child{
+          display: inline-block;
+          color: rgb(86, 89, 216);
+
+      }
+      .rate{
+          height: 10%;
+          background-color: rgb(187, 194, 202);
+          box-sizing: border-box;
+          padding: 10px;
       }
       footer{
         background-color: rgba(40, 40, 54, 0.938);
-        width: 100%;
-        height: 10vh;
+        color: white;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
       }
-    .td1, .td2, .td3, .tr1, .tr2, .tr3, .table1{
-            border-collapse: collapse;
-            border: 1px solid rgb(145, 159, 161);
-            
-        }
-    .sp, .hang1, .hang2, .cot11, .cot12, .cot13, .cot14, .cot21, .cot22, .cot23, .cot24{
-        border-collapse: collapse;
-            border: 1px solid rgb(145, 159, 161);
+      @media screen and (max-width: 1100px){
+         .dssp{
+             display: block;
+         }
+         .sp{
+             width: 90%;
+         }
+     }
+     @media screen and (max-width: 700px){
+         .main{
+             display: block;
+         }
+         .left{
+             width: 100%;
+         }
+         .right{
+             width: 100%;
+         }
+         
+     }
 
-    }
-   
-
+     
     </style>
 </head>
 
 <body>
     <header>
-        <table style="width: 100%; height: 100%;">
-            <tr>
-                <td>
-                    <span class="span1">Nền tảng</span>
-                </td>
-                <td>
-                    <span class="span2" style="float: right;">
-                        <a style="text-decoration: none; color:#f2f2f2;" href="">Trang chủ</a>
-                        &nbsp;
-                        <a style="text-decoration: none; color:#f2f2f2;" href="">Giới thiệu</a>
-                        &nbsp;
-                        <a style="text-decoration: none; color: #f2f2f2;" href="">Dịch vụ</a>
-                        &nbsp;
-                        <a style="text-decoration: none; color: #f2f2f2;" href="">Liên hệ</a>
-                 </span>
-
-                </td>
-            </tr>
-        </table>
-      
+        
+        <h3>Nền tảng</h3>
+         <nev>
+             <a href="">Trang chủ</a>
+             <a href="">Giới thiệu</a>
+             <a  href="">Dịch vụ</a>
+            <a  href="">Liên hệ</a>
+        </nev>
     </header>
     <div class="main">
-        <table style="width: 100%; height: 100%;">
-           <tr>
-               <td style="width: 25%; height: 100%;">
-                <div class="left" style="width: 100%; height: 100%;">
-                    <h3>NeTa Shop</h3>
-                    <table cellpadding="5" class="table1" style="width: 95%; height: 20%;">
-                        <tr class="tr1">
-                            <td class="td1" style="width:40vh;"><a style="text-decoration: none;" href="">Category1</a></td>
-                        </tr>
-                        <tr class="tr2">
-                            <td class="td2" style="width: 40vh"><a style="text-decoration: none;" href="">Category2</a></td>
-                        </tr>
-                        <tr class="tr3">
-                            <td class="td3" style="width: 40vh"><a style="text-decoration: none;" href="">Category3</a></td>
-                        </tr>
+        <div class="left">
+            <h1>NeTa Shop</h1>
+            <table>
+                <tr>
+                    <td>Category 1</td>
+                </tr>
+                <tr>
+                    <td>Category 2</td>
+                </tr>
+                <tr>
+                    <td>Category 3</td>
+                </tr>
+            </table>
+
+        </div>
         
-                    </table>
+        <div class="right">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="Cover_Chan_Rau_Zalo.jpg" style="width:100%">
+                  <div class="text">Caption Text</div>
                 </div>
-               </td>
-               <td>
-                <div class="right" style="width: 100%; height: 100%;">
-                    <div class="bia" style="width: 100%; height: 30%;">
-                        <img style="width: 100%; height: 100%; float: right;" src="Cover_Chan_Rau_Zalo.jpg" alt="">
-                    </div>
-                    <div class="hang hoa" style="width: 100%; height: 70%;">
-                        <table class="sp" style="width: 100%; height: 100%;" >
-                            <tr class="hang1">
-                                <td class="cot11">
-                                    <div style="width: 100%; height: 100%;">
-                                        <div class="sp11">
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="Cover_Thai_Foods.jpg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="Hoa qua.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+              <div class="dssp">
+                  <div class="sp">
+                      <div class="image">
 
-                                        </div>
+                      </div>
+                      <div class="content">
+                          <h3 >Sản phẩm 1</h3>
+                          <h3>$50.50</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, omnis. ipsum dolor sit amet., ipsum dolor.</p>
+                          
+                      </div>
+                      <div class="rate">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star"></i>
 
-                                    </div>
+                      </div>
 
-                                </td>
-                                <td class="cot12">
-                                    <div style="width: 100%; height: 100%;">
-                                        <div class="sp12">
-
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                                <td class="cot13">
-                                    <div style="width: 100%; height: 100%;">
-                                        <div class="sp13">
-
-                                        </div>
-
-                                    </div>
-
-                                </td>
-                                <td class="cot14">
-                                    <div style="width: 100%; height: 100%;">
-                                        <div class="sp14">
-
-                                        </div>
-
-                                    </div>
-
-                                </td>
-
-                            </tr>
-                            <tr class="hang2">
-                                <td class="cot21">
-
-                                </td>
-                                <td  class="cot22">
-
-                                </td>
-                                <td class="cot23">
-
-                                </td>
-                                <td class="cot24">
-                                    
-                                </td>
-
-                            </tr>
-                        </table>
+                  </div>
+                  <div class="sp">
+                    <div class="image">
 
                     </div>
+                    <div class="content">
+                        <h3 >Sản phẩm 1</h3>
+                        <h3>$50.50</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, omnis. ipsum dolor sit amet., ipsum dolor.</p>
+                        
+                    </div>
+                    <div class="rate">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star"></i>
+
                     </div>
 
-               </td>
-           </tr>
-        
-        </table>
+                </div>
+                <div class="sp">
+                    <div class="image">
+
+                    </div>
+                    <div class="content">
+                        <h3 >Sản phẩm 1</h3>
+                        <h3>$50.50</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, omnis. ipsum dolor sit amet., ipsum dolor.</p>
+                        
+                    </div>
+                    <div class="rate">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      
+
+                    </div>
+
+                </div>
+                  
+
+              </div>
+              <div class="dssp">
+                <div class="sp">
+                    <div class="image">
+
+                    </div>
+                    <div class="content">
+                        <h3 >Sản phẩm 1</h3>
+                        <h3>$50.50</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, omnis. ipsum dolor sit amet., ipsum dolor.</p>
+                        
+                    </div>
+                    <div class="rate">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star"></i>
+
+                    </div>
+
+                </div>
+                <div class="sp">
+                  <div class="image">
+
+                  </div>
+                  <div class="content">
+                      <h3 >Sản phẩm 1</h3>
+                      <h3>$50.50</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, omnis. ipsum dolor sit amet., ipsum dolor.</p>
+                      
+                  </div>
+                  <div class="rate">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star"></i>
+
+                  </div>
+
+              </div>
+              <div class="sp">
+                  <div class="image">
+
+                  </div>
+                  <div class="content">
+                      <h3 >Sản phẩm 1</h3>
+                      <h3>$50.50</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, omnis. ipsum dolor sit amet., ipsum dolor.</p>
+                      
+                  </div>
+                  <div class="rate">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    
+
+                  </div>
+
+              </div>
+                
+
+            </div>
+
+        </div>
+       
     </div>
     <footer>
-        <table style="width: 100%; height: 100%;">
-            <tr>
-                <th>
-                    <span style="color: #f2f2f2;" class="pfooter">Bản quyền bởi &copy; <a style="text-decoration: none; color: rgb(42, 70, 199);" href="">NenTang.vn</a> &copy; 2019</span>
-                </th>
-            </tr>
-        </table>
-          
+       <h3>Bản quyền bởi &copy; <a style="text-decoration: none; color: rgb(42, 70, 199);" href="">NenTang.vn</a> &copy; 2019</h3>
     </footer>
    
 </body>
-
+<script src="slide.js"></script>
 </html>
