@@ -6,21 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
 </head>
-<body>
-    <h2>Giải phương trình a*x^2 + b*x + c = 0</h2>
-    <button type="button" onclick="abc()">Nhập a, b, c</button>
-    
+     <body>
+    <h1>Giải phương trình a*x^2 + b*x + c = 0</h1>
+    <button type="button" onclick="abc()">Nhap a, b, c</button>
+    <h1 id="demo"></h1>
 
-</body>
+     </body>
 <script>
-    function abs(){
-       var a = prompt("moi nhap a:","0");
-       var b = prompt("moi nhap b:","0");
-       var c = prompt("moi nhap c:","0");
-       if(a != null)  {
-                  alert("a " + a);
-              }
-        
+    function abc()  {
+    var a = prompt("moi nhap a:");
+    var b = prompt("moi nhap b:");
+    var c = prompt("moi nhap c:");
+    var detal = b*b - 4*a*c;
+       
+       if(detal > 0){
+           var x1 = (-b + Math.sqrt(detal)) / (2*a);
+           var x2 =  (-b - Math.sqrt(detal)) / (2*a);
+           document.getElementById("demo").innerHTML = "Phương trình có hai nghiệm phân biệt: x1 = " + x1 + " và x2 = " + x2;
+       }
+       if(detal == 0){
+           var x1 = (-b) / (2*a);
+           document.getElementById("demo").innerHTML = "Phương trình có một nghiệm duy nhất: x1 = " + x1;
+       }
+       if(detal < 0){
+           document.getElementById("demo").innerHTML = "Phương trình vô nghiệm";
+       }
     }
 </script>
 </html>
